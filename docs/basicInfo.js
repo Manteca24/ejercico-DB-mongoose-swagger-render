@@ -1,5 +1,5 @@
 module.exports = {
-    openapi: '3.0.0',
+    openapi: '3.0.3',
     info: {
       title: 'Task API',
       version: '1.0.0',
@@ -7,3 +7,4 @@ module.exports = {
     },
   };
   
+

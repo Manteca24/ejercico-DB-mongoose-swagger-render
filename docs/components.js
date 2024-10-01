@@ -1,8 +1,25 @@
 module.exports = {
     components: {
-      responses: {
-        NotFound: {
-          description: 'Tarea no encontrada',
+      schemas: {
+        Task: {
+          type: 'object',
+          properties:{
+            _id:{
+              type:'objectID',
+              description:'task identification number',
+              example:'78901348901349078134'
+            },
+            title:{
+              type:'string',
+              description:'task to create',
+              example:'Aprendiendo swagger'
+            },
+            completed:{
+              type:'boolean',
+              description:'completed or not',
+              example:'false'
+            },
+          }
         },
         IllegalInput: {
           description: 'Input inválido',
