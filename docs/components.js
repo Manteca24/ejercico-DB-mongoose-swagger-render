@@ -21,6 +21,16 @@ module.exports = {
             },
           }
         },
+        TaskBody: {
+          type: 'object',
+          properties:{
+            title:{
+              type:'string',
+              description:'task to create',
+              example:'Aprendiendo swagger'
+            },
+          }
+        },
         IllegalInput: {
           description: 'Input inválido',
         },
